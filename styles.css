@@ -23,6 +23,7 @@ header{
     align-items: center;
     padding: 20px 40px;
     gap: 60px;
+   
 
 }
 
@@ -179,6 +180,72 @@ header nav{
 }
 
 
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.txt-home{
+    flex: 1;
+    padding: 25px;
+}
+
+.txt-home h1{
+    max-width: 540px;
+    font-size: 80px;
+    margin-bottom: 48px;
+}
+
+.txt-home p{
+    font-size: 18px;
+    max-width: 445px;
+    color:#686868 ;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+.txt-home a{
+    width: 163px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151515;
+    font-weight: 700 ;
+    color: #fff;
+    border-radius: 18px;
+    transition: 0.3s ;
+}
+
+.txt-home a:hover{
+    background: none;
+    color: #151515;
+    border: 1px solid #151515;
+    transition: 0.3s;
+}
+
+.logos-svg-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 116px;
+    gap: 20px;
+}
+
+.img-home-container{
+    flex: 1;
+}
+
+.img-home-container img{
+    width: 100%;
+}
+
+
+
+
 @media screen and (max-width:768px) {
     header{
         justify-content: space-between;
@@ -313,5 +380,28 @@ header nav{
         width: 100%;
         text-align: center;
     }
+
+    main{
+        flex-direction: column-reverse;
+    }
+    
+    .logos-svg-container{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img-home-container{
+        width: 100%;
+    }
+   
+
+    .img-home-container img{
+        height: 341px;
+        object-fit: cover;
+        
+    }
     
 }
+
+
+
