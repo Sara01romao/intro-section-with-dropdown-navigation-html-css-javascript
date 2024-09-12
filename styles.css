@@ -257,6 +257,7 @@ main {
     height: 100vh;
     position: fixed;
     bottom: 0;
+    top: 0;
     left: 0;
     overflow: hidden;
   }
@@ -289,13 +290,15 @@ main {
     justify-content: initial;
     transform: translateX(240px);
     right: 0;
-    overflow-y: auto; /* Permite rolagem vertical */
+    top: 0;
+    overflow-y: auto; 
+    
 }
 
 .modal-menu.active nav {
     transform: translateX(0);
     opacity: 1;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Melhorar o efeito de transição */
+    
 }
 
 
