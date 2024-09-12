@@ -269,6 +269,10 @@ main {
     display: block;
   }
 
+  header nav{
+    flex-wrap: nowrap;
+  }
+
   header nav,
   .list-link-container,
   .open-drop-container {
@@ -279,22 +283,20 @@ main {
     max-width: 240px;
     width: 100%;
     position: fixed;
-
     height: 100vh;
     background: #fff;
-    padding-top: 21px;
     padding: 21px 19px 21px 24px;
     justify-content: initial;
-
     transform: translateX(240px);
     right: 0;
-  }
+    overflow-y: auto; /* Permite rolagem vertical */
+}
 
-  .modal-menu.active nav {
-   
+.modal-menu.active nav {
     transform: translateX(0);
     opacity: 1;
-  }
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Melhorar o efeito de transição */
+}
 
 
 
